@@ -162,3 +162,21 @@ function Config(ServiceProvider){
 * therefor, we __can't__ inject any regular components into `.config`
 * we __can__ inject the provider of service with nameProvider
 ***
+## 4
+### ng-if
+* if statement is true - div (or other) will be shown
+* remove element from DOM
+
+### ng-show
+* if statement is true - div (or other) will be shown
+* do not remove element from DOM
+
+### ng-hide
+* if statement is true / false - div (or other) will be hidden / shown
+* do not remove element from DOM
+***
+#### _Summary_
+`ng-if` is a general purpose "if statement" like attribute directive. If its value is false, Angular removes the containing element from the DOM entireely.
+
+`ng-show` / `ng-hide` attribute directives automatically attach CSS classes to the containing element that either show or hide the element. The containing element does not get removed from the DOM.
+***

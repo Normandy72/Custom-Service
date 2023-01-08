@@ -80,7 +80,9 @@
                     <button ng-click="list.removeItem($index);">Remove Item</button>
                 </li>
             </ol>
-            <div class="error">Error: {{list.errorMessage}}</div>
+            <!-- <div ng-if="list.errorMessage" class="error">Error: {{list.errorMessage}}</div> -->
+            <!-- <div ng-show="list.errorMessage" class="error">Error: {{list.errorMessage}}</div> -->
+            <div ng-hide="!list.errorMessage" class="error">Error: {{list.errorMessage}}</div>
         </div>
     </div>
 </body>
