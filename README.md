@@ -22,3 +22,17 @@ Restricts object to always having a single instance.
 ### Lazily Instantiated
 Only created if application component declares it as a dependency.
 If no components in application are dependent on this service, it will never get created.
+
+***
+#### _Summary_
+Controllers are not supped to
+* Handle business logic
+* Code sharing
+* Be used to share data across other components
+
+Custom services instantiated with `.service` method
+* Singletons (only 1 instance of object exists)
+* Lazily instantiated (only created if something depends on them)
+
+`.service('name', function)`, treats function as a function constructor
+***
