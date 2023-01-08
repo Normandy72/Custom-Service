@@ -24,9 +24,10 @@ h3{
 }
 
 button{
-    padding: 2px;
+    padding: 5px;
     border-radius: 5px;
     border: none;
+    margin-top: 5px;
     margin-left: 10px;
     background-color: rgb(120, 222, 222);    
 }
